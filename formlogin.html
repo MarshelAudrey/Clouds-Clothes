@@ -10,6 +10,18 @@
       <h1>Login</h1>
       <form>
         <table>
+          <div class="inputBox">
+            <input type="text" id="username" name="username" required >
+            <label>Username</label>
+          </div>
+            <div class="inputBox">
+          <input type="password" id="password" name="password" required >
+          <label>Password</label>
+        </div>
+        <div class="inputBox">
+        <a href="homeafter.html">
+          <input type="submit" name="login" value="Login" onclick="Login()">
+        </div>
           <input type="text" id="username" name="username" placeholder="Username">
           <input type="password" id="password" name="password" placeholder="Password" >
         <a href="homeafter.html">
@@ -21,9 +33,6 @@
           <p>Belum Punya Akun?</p>
           <a href="formregistrasi.html">
             <input type="submit" name="register" value="Register"> </a>
-
-
-
           </table>
       </form>
     </div>
@@ -39,6 +48,11 @@ function Login(){
   {
     location.href="homeafter.html";
   }
+
+  else (username.value =="" || password.value=="")
+  {
+    window.alert("Username atau Password SALAH")
+
   else (username.value =="" || password.value=="")
   {
     window.alert("salah")

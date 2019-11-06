@@ -10,8 +10,8 @@
       <h1>Login</h1>
       <form>
         <table>
-          <input type="text" id="username" name="username">
-          <input type="password" id="password" name="password" >
+          <input type="text" id="username" name="username" placeholder="Username">
+          <input type="password" id="password" name="password" placeholder="Password" >
         <a href="homeafter.html">
           <input type="submit" name="login" value="Login" onclick="Login()">
         </a>
@@ -20,7 +20,7 @@
 
           <p>Belum Punya Akun?</p>
           <a href="formregistrasi.html">
-            <input type="submit" id = "s" name="register" value="Register"> </a>
+            <input type="submit" name="register" value="Register"> </a>
 
 
 
@@ -35,7 +35,7 @@ function Login(){
   var username = document.getElementById("username")
   var password = document.getElementById("password")
 
-  if(username.value =="mars" || password.value=="1")
+  if(username.value =="Marshel" || password.value=="12345")
   {
     location.href="homeafter.html";
   }

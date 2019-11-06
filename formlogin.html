@@ -9,23 +9,40 @@
     <div class="box">
       <h1>Login</h1>
       <form>
-        <div class="inputBox" >
-          <input type="text" name="" required="">
-          <label>username</label>
-        </div>
-        <div class="inputBox">
-          <input type="password" name="" required="">
-          <label>password</label>
-        </div>
+        <table>
+          <input type="text" id="username" name="username">
+          <input type="password" id="password" name="password" >
         <a href="homeafter.html">
-          <input type="submit" name="" value="Masuk">
+          <input type="submit" name="login" value="Login" onclick="Login()">
         </a>
         <br>
         <br>
+
           <p>Belum Punya Akun?</p>
           <a href="formregistrasi.html">
-        <input type="submit" name="" value="Daftar"> </a>
+            <input type="submit" id = "s" name="register" value="Register"> </a>
+
+
+
+          </table>
       </form>
     </div>
   </body>
 </html>
+
+<script>
+function Login(){
+  var username = document.getElementById("username")
+  var password = document.getElementById("password")
+
+  if(username.value =="mars" || password.value=="1")
+  {
+    location.href="homeafter.html";
+  }
+  else (username.value =="" || password.value=="")
+  {
+    window.alert("salah")
+  }
+}
+
+</script>

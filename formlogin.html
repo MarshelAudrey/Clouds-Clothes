@@ -9,23 +9,46 @@
     <div class="box">
       <h1>Login</h1>
       <form>
-        <div class="inputBox">
-          <input type="text" name="" required="">
-          <label>username</label>
+        <table>
+          <div class="inputBox">
+            <input type="text" id="username" name="username" required >
+            <label>Username</label>
+          </div>
+            <div class="inputBox">
+          <input type="password" id="password" name="password" required >
+          <label>Password</label>
         </div>
         <div class="inputBox">
-          <input type="password" name="" required="">
-          <label>password</label>
-        </div>
         <a href="homeafter.html">
-          <input type="submit" name="" value="Masuk">
+          <input type="submit" name="login" value="Login" onclick="Login()">
+        </div>
         </a>
         <br>
         <br>
+
           <p>Belum Punya Akun?</p>
           <a href="formregistrasi.html">
-        <input type="submit" name="" value="Daftar"> </a>
+            <input type="submit" name="register" value="Register"> </a>
+          </table>
       </form>
     </div>
   </body>
 </html>
+
+<script>
+function Login(){
+  var username = document.getElementById("username")
+  var password = document.getElementById("password")
+
+  if(username.value =="Marshel" || password.value=="12345")
+  {
+    location.href="homeafter.html";
+  }
+
+  else (username.value =="" || password.value=="")
+  {
+    window.alert("Username atau Password SALAH")
+  }
+}
+
+</script>

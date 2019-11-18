@@ -11,15 +11,15 @@
       <form>
         <table>
           <div class="inputBox">
-            <input type="text" id="username" name="username" required >
+            <input type="text" id="username" name="username" required>
             <label>Username</label>
           </div>
             <div class="inputBox">
-          <input type="password" id="password" name="password" required >
+          <input type="password" id="password" name="password" required>
           <label>Password</label>
         </div>
         <div class="inputBox">
-        <a href="homeafter.html">
+        <a href="https://marshelaudrey.github.io/homeafter">
           <input type="submit" name="login" value="Login" onclick="Login()">
         </div>
         </a>
@@ -36,19 +36,14 @@
 </html>
 
 <script>
-function Login(){
-  var username = document.getElementById("username")
-  var password = document.getElementById("password")
-
-  if(username.value =="Marshel" || password.value=="12345")
-  {
-    location.href="homeafter.html";
-  }
-
-  else (username.value =="" || password.value=="")
-  {
-    window.alert("Username atau Password SALAH")
-  }
-}
-
+	function login() {
+		var username = document.getElementById("username").value;
+		var password = document.getElementById("password").value;
+		if (username != "" && password!="" ) {
+      {location.href="https://marshelaudrey.github.io/homeafter"};
+		}
+    else{
+			alert('Anda harus mengisi data dengan lengkap !');
+		}
+	}
 </script>
